@@ -170,9 +170,9 @@ export default function Home() {
             <span className="eyebrow">Projects</span>
             <h2>Explore our latest website demo.</h2>
           </div>
-          <div className="project-grid">
+          <div className="project-grid project-grid-featured">
             {projects.map((project) => (
-              <ProjectCard key={project.name} project={project} />
+              <ProjectCard key={project.name} project={project} featured />
             ))}
           </div>
         </section>
