@@ -42,9 +42,9 @@ export default function ProjectCard({ project, featured = false }) {
         <p>{project.description}</p>
         <p className="project-credit">Developed by {project.developedBy}</p>
         <ul className="project-tech-list" aria-label="Technologies used">
-          {/* {project.technologies.map((technology) => (
+          {project.technologies.map((technology) => (
             <li key={technology}>{technology}</li>
-          ))} */}
+          ))}
         </ul>
         <div className="project-link-wrap">
           <a
