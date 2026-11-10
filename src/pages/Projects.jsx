@@ -3,8 +3,8 @@ import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 
 function usePageMeta() {
-  const title = 'TechoraDev';
-  const description = 'Explore TechoraDev projects and upcoming digital solutions currently in development.';
+  const title = 'Projects | TechoraDev';
+  const description = 'Explore website demos and digital experiences built by TechoraDev.';
 
   document.title = title;
   const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
@@ -23,15 +23,15 @@ export default function Projects() {
       <main className="page container section-spacing">
         <section className="page-intro">
           <span className="eyebrow">Our projects</span>
-          <h1>We are working on exciting digital solutions.</h1>
+          <h1>Digital experiences built to explore.</h1>
           <p>
-            Our completed projects and client success stories will be showcased here soon.
+            Explore completed demos that showcase our approach to thoughtful design and development.
           </p>
         </section>
 
-        <section className="project-grid full-grid">
+        <section className="project-grid project-grid-featured">
           {projects.map((project) => (
-            <ProjectCard key={project.name} project={project} />
+            <ProjectCard key={project.name} project={project} featured />
           ))}
         </section>
       </main>

@@ -168,7 +168,7 @@ export default function Home() {
         <section className="container section-spacing">
           <div className="section-heading">
             <span className="eyebrow">Projects</span>
-            <h2>We are working on exciting digital solutions.</h2>
+            <h2>Explore our latest website demo.</h2>
           </div>
           <div className="project-grid">
             {projects.map((project) => (

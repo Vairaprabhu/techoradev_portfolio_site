@@ -212,9 +212,17 @@
   .pricing-card,
   .process-card,
   .story-card,
-  .project-card,
   .contact-panel {
     padding: 1.15rem;
+  }
+
+  .project-card-content,
+  .project-card-featured .project-card-content {
+    padding: 1.15rem;
+  }
+
+  .project-grid-featured .project-preview {
+    aspect-ratio: 16 / 9;
   }
 
   .pricing-header {
