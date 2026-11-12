@@ -225,6 +225,10 @@
     aspect-ratio: 16 / 9;
   }
 
+  .project-carousel-item {
+    flex-basis: min(24rem, 82vw);
+  }
+
   .pricing-header {
     align-items: flex-start;
     flex-direction: column;

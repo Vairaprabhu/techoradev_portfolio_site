@@ -45,6 +45,20 @@ export const pricingPlans = [
     whatsappContext: 'Professional Website package',
   },
   {
+    name: 'Business Growth Website',
+    price: '₹15,000',
+    highlight: 'A tailored online presence for established businesses ready to scale.',
+    features: [
+      'Up to 10 pages',
+      'Premium custom layouts',
+      'Responsive design',
+      'Advanced SEO setup',
+      'Analytics integration',
+      'First-year domain and hosting allowance',
+    ],
+    whatsappContext: 'Business Growth Website package',
+  },
+  {
     name: 'E-Commerce Website',
     price: '₹17,999',
     highlight: 'Ideal for launching a small online store with essential tooling.',
@@ -57,5 +71,19 @@ export const pricingPlans = [
       'First-year domain and hosting allowance',
     ],
     whatsappContext: 'E-Commerce Website package',
+  },
+  {
+    name: 'Premium Commerce Website',
+    price: '₹20,000',
+    highlight: 'A polished online store with expanded product and sales tools.',
+    features: [
+      'Initial catalogue up to 50 products',
+      'Shopping cart and checkout',
+      'Order and inventory management',
+      'Payment gateway integration',
+      'Promotional and discount tools',
+      'First-year domain and hosting allowance',
+    ],
+    whatsappContext: 'Premium Commerce Website package',
   },
 ];

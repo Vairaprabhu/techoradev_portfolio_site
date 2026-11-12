@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Menu, X } from 'lucide-react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { buildWhatsAppLink } from '../utils/contact';
 
 const navItems = [
@@ -49,6 +49,14 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container nav-shell">
+        <Link to="/" className="brand-lockup" aria-label="TechoraDev home">
+          <span className="brand-symbol" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
+          <span className="brand-name">TechoraDev</span>
+        </Link>
         <nav
           id="main-navigation"
           className={`main-nav ${menuOpen ? 'nav-open' : ''}`}

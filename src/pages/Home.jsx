@@ -168,12 +168,16 @@ export default function Home() {
         <section className="container section-spacing">
           <div className="section-heading">
             <span className="eyebrow">Projects</span>
-            <h2>Explore our latest website demo.</h2>
+            <h2>Innovative digital ideas built to stand out.</h2>
           </div>
-          <div className="project-grid project-grid-featured">
-            {projects.map((project) => (
-              <ProjectCard key={project.name} project={project} featured />
-            ))}
+          <div className="project-carousel" aria-label="Project showcase carousel">
+            <div className="project-carousel-track">
+              {[...projects, ...projects].map((project, index) => (
+                <div key={`${project.name}-${index}`} className="project-carousel-item">
+                  <ProjectCard project={project} />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
